@@ -13,14 +13,14 @@
     <h1>
       TechTalk
     </h1>
-    <!-- Only display the logout button if the user is logged in -->
-    {{#if logged_in}}
     <nav>
       <button class="btn" id="home">Home</button>
       <button class="btn" id="dashboard">Dashboard</button>
+    <!-- Only display the logout button if the user is logged in -->
+    {{#if logged_in}}
       <button class="btn" id="logout">Logout</button>
-    </nav>
     {{/if}}
+    </nav>
   </header>
   <h3>
     A tech blog the tech noob.
