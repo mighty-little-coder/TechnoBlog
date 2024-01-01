@@ -1,4 +1,6 @@
 module.exports = {
+// I believe this will be code to display blog posts logos and such
+
   get_emoji: () => {
     const randomNum = Math.random();
     let book = "📗";
