@@ -1,6 +1,28 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
+// Sign up new user profile
+router.post('/login', async (req, res) => {
+  try {
+    const newUserData = await User.create({
+      name: req.body.name,
+      email: req.body.email,
+      password: req.body.password,
+    });
+
+    req.session.save(() => {
+      req.session.user_id = newUserData.id;
+      req.session.logged_in = true;
+      
+      res.json({ user: newUserData, message: 'Your account has been created!' });
+    });
+
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+// Login page
 router.post('/login', async (req, res) => {
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
@@ -33,6 +55,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
+// Logout
 router.post('/logout', (req, res) => {
   if (req.session.logged_in) {
     req.session.destroy(() => {
