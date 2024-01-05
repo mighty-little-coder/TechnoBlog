@@ -16,14 +16,17 @@
     <nav>
       <button class="btn" id="home">Home</button>
       <button class="btn" id="dashboard">Dashboard</button>
-    <!-- Only display the logout button if the user is logged in -->
-    {{#if logged_in}}
+      {{log logged_in }}
+      <!-- Only display the logout button if the user is logged in -->
+      {{#if logged_in}}
       <button class="btn" id="logout">Logout</button>
-    {{/if}}
+      {{else}}
+      <button class="btn" id="login">Login</button>
+      {{/if}}
     </nav>
   </header>
   <h3>
-    A tech blog the tech noob.
+    A tech blog for the tech noob.
   </h3>
   <main class="container container-fluid mt-5">
     {{{ body }}}
@@ -33,6 +36,8 @@
   </footer>
 
   <!-- Only include the logout script if the user is logged in -->
+
+  <script src="/js/login.js"></script>
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
