@@ -1,7 +1,20 @@
 [
     {
-      "name": "Test",
-      "email": "test@email.com",
-      "password": "password12345"
+      "id": "1",
+      "name": "Brian Kernighan",
+      "email": "coding1@email.com",
+      "password": "codedaddy1973"
+    },
+    {
+      "id": "2",
+      "name": "Dennis Ritchie",
+      "email": "c.is.life@email.com",
+      "password": "c4ever"
+    },
+    {
+      "id": "3",
+      "name": "Paul Walker",
+      "email": "skylinedrive@email.edu",
+      "password": "tokyodriffin98"
     }
   ]

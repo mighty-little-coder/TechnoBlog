@@ -55,5 +55,5 @@ app.use(routes);
 
 // Syncing the database and starting the Express server
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log(`Now listening on port ${PORT}`));
+  app.listen(PORT, () => console.log(`Now rendering at http://localhost:${PORT}. Click here to open in browser. 🚀`));
 });
