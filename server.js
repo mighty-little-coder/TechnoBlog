@@ -1,15 +1,15 @@
 // Importing required modules and packages
 const path = require('path');
-const routes = require('./controllers');
-const helpers = require('./utils/helpers');
-const app = express();
-const PORT = process.env.PORT || 3024;
-const hbs = exphbs.create({ helpers });
-const sequelize = require('./config/connection');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
+const routes = require('./controllers');
+const helpers = require('./utils/helpers');
+const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const app = express();
+const PORT = process.env.PORT || 3024;
+const hbs = exphbs.create({ helpers });
 
 // Session configuration
 const sess = {
