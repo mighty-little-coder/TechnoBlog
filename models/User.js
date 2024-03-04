@@ -1,4 +1,4 @@
-// 
+// Set constraints on the User model
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');

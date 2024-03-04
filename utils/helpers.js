@@ -1,4 +1,4 @@
-// Sets date for 'created_at' column
+// Sets date for 'date_created' column
 module.exports = {
   format_date: (date) => {
     const timeOptions = {

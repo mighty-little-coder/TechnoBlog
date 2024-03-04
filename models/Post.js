@@ -1,4 +1,4 @@
-// Set constraints on the Post model here
+// Set constraints on the Post model
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 

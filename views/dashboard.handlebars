@@ -11,7 +11,7 @@
 
           <h2><a href="/view-post/{{userPost.id}}" class="link-light" id="post-title-{{userPost.id}}">{{userPost.post_title}}</a></h2>
 
-          <p id="post-content-{{userPost.id}}">{{userPost.post_body}}</p>
+          <p id="post-body-{{userPost.id}}">{{userPost.post_body}}</p>
 
           <p class="card-subtitle mb-2 text-body-secondary">
             {{format_date userPost.date_created}}
@@ -29,16 +29,16 @@
     <div class="col-md-5">
       <form>
         <div class="mb-3">
-          <h2 id="post-h2">Add Blog Post</h2>
+          <h2 id="post-h2">Create Blog Post</h2>
           
-          <label for="post-title" class="form-label">Title</label>
-          <input type="text" class="form-control" id="title">
+          <label for="post-title" class="form-label">Post title</label>
+          <input type="text" class="form-control" id="post_title">
 
-          <label for="new-post" class="form-label">Type a new post!</label>
-          <textarea type="text" class="form-control" rows="5" id="content"></textarea>
+          <label for="new-post" class="form-label">Input body of post</label>
+          <textarea type="text" class="form-control" rows="5" id="post_body"></textarea>
         </div>
         
-        <button type="submit" class="btn btn-dark" id="create-post">Create Post</button>
+        <button type="submit" class="btn btn-dark" id="create-post">Submit Post</button>
       </form>
     </div>
   </div>

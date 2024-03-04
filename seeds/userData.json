@@ -16,5 +16,17 @@
       "name": "Paul Walker",
       "email": "skylinedrive@email.edu",
       "password": "tokyodriffin98"
+    },
+    {
+      "id": "4",
+      "name": "Groot",
+      "email": "iamgroot@groot.groot",
+      "password": "grootgroot"
+    },
+    {
+      "id": "5",
+      "name": "YouTube Guy",
+      "email": "look.at.it@email.email",
+      "password": "youtubeguy"
     }
   ]

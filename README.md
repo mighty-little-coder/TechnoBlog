@@ -79,7 +79,8 @@ To use the application, follow these steps:<br><br>
   - <a href="https://developer.mozilla.org/en-US/">MDN</a>
   - <a href="https://leewarrick.com/">Lee Warrick</a> UCONN Bootcamp Instructor
   - <a href="https://github.com/miacias">Mia Ciasullo</a> UCONN Bootcamp Instructor
-  - <a href="https://github.com/'name'">name</a> UCONN Bootcamp Tutor
+  - <a href="https://github.com/dakotablanchard">Dakota Blanchard</a> UCONN Bootcamp Student
+  - <a href="https://github.com/'name'">Andrew Hardemon</a> UCONN Bootcamp Tutor
   </br>
   </br>
   </br>
@@ -99,7 +100,6 @@ To use the application, follow these steps:<br><br>
   - View all posts by a single user
   - View all comments by a single user
   - View all posts by a single category
-  - View all posts with a single tag
   </br>
   </br>
   </br>
