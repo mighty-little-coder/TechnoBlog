@@ -1,13 +1,11 @@
-// Importing Sequalize
+// Create a new Sequelize model
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
 let sequelize;
 
-// Using JAWSDB to create the database via cloud
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
-// If running locally, create a local database
 } else {
   sequelize = new Sequelize(
     process.env.DB_NAME,
@@ -21,5 +19,4 @@ if (process.env.JAWSDB_URL) {
   );
 }
 
-// Export modules
 module.exports = sequelize;
