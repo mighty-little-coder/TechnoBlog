@@ -5,7 +5,7 @@ const withAuth = require('../utils/auth');
 
 // GET all posts for homepage
 router.get('/', async (req, res) => {
-    res.redirect('/home');
+  res.redirect('/home');
 });
 
 // GET single post
@@ -22,6 +22,7 @@ router.get('/login', (req, res) => {
 // GET all posts for homepage
 router.get('/home', async (req, res) => {
   try {
+    console.log("in homepage get route try block")
     const postData = await Post.findAll({
       include: [
         {
@@ -30,21 +31,23 @@ router.get('/home', async (req, res) => {
         },
       ],
     });
-
+    console.log("end of get all route try block")
     const posts = postData.map((post) => post.get({ plain: true }));
-
+    console.log(posts)
     res.render('homepage', {
       style: 'home.css',
       posts,
       logged_in: req.session.logged_in
     });
+    console.log("just before catch block")
   } catch (err) {
+    console.log(err)
     res.status(500).json(err);
   }
 });
 
 // GET single post
-router.get('/dashboard', withAuth,  async (req, res) => {
+router.get('/dashboard', withAuth, async (req, res) => {
 
   const userPostData = await Post.findAll({
     where: {
@@ -90,9 +93,9 @@ router.get('/view-post/:id', withAuth, async (req, res) => {
         }
       ],
     });
-    
+
     const post = postData.get({ plain: true });
-    
+
     res.render('posts', {
       style: 'posts.css',
       post,

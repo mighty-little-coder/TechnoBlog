@@ -8,8 +8,9 @@
         </a>
         <p class="w-100">{{post.post_body}}</p>
         <p class="card-subtitle mb-2 text-body-secondary">Posted by: {{post.user.name}}</p>
-        <p class="card-subtitle mb-2 text-body-secondary">{{post.date_created format_date}}</p>
+        <p class="card-subtitle mb-2 text-body-secondary">{{format_date post.date_created}}</p>
       </div>
     </div>
   </div>
 {{/each}}
+`
