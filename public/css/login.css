@@ -1,7 +1,14 @@
 #blog-logo {
-    background-color: white;
+    color: #f2f4e9;
+    background: none;
     border-radius: 5px;
     padding: 5px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 75px;
+    text-shadow: 5px 5px 5px black;
+}
+
+#body-bootstrap-override {
+    background-image: url(../images/misty-mountain-wallpaper-2x.jpg);
+    
 }

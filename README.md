@@ -25,7 +25,7 @@
   ## Installation
   
   To in stall this application:<br></br>
-  1. Clone the repository from the <a href="link">link</a> provided.<br></br>
+  1. Clone the repository from the <a href="https://github.com/mighty-little-coder/TechnoBlog">link</a> provided.<br></br>
   2. Open the terminal and navigate to the root directory of the cloned repository.<br></br>
   3. Run the following command to install the necessary dependencies:<br></br>
   ```npm install```<br></br>
@@ -105,7 +105,7 @@ To use the application, follow these steps:<br><br>
   </br>
   ## How to Contribute
   
-  To contribute to this project, please contact the creator of this project via the contact information provided below.<br>Otherwise, feel free to fork the <a href="https://github.com/mighty-little-coder/ECommerce-Backend-Structure">repository</a> and make changes as you see fit. If you think the changes would benefit the project, please submit a pull request.
+  To contribute to this project, please contact the creator of this project via the contact information provided below.<br>Otherwise, feel free to fork the <a href="https://github.com/mighty-little-coder/TechnoBlog">repository</a> and make changes as you see fit. If you think the changes would benefit the project, please submit a pull request.
   </br>
   </br>
   </br>

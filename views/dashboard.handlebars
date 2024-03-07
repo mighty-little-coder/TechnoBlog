@@ -3,7 +3,8 @@
 
 {{!-- Displays single user's posts and allows them to create, edit, and delete posts. --}}
     <div class="col-md-7">
-      <h1 id="post-h1">Your Posts</h1>
+      {{#if userPosts.length}}
+      <h1 id="post-h1">Your Posts</h1> <!-- Replace "Your Posts" with the user's name -->
 
       {{#each userPosts as |userPost|}}
       <div class="card mx-auto mt-3" id="dash-post-card">
@@ -23,22 +24,26 @@
         </div>
       </div>
       {{/each}}
+      {{else}}
+      <h1 id="post-h1">No Posts Yet</h1>
+      <p>You haven't created any posts yet! When you create a post, it will appear here.</p>
+      {{/if}}
     </div>
 
 {{!-- Allows user to create a new post. --}}
     <div class="col-md-5">
       <form>
         <div class="mb-3">
-          <h2 id="post-h2">Create Blog Post</h2>
+          <h2 id="post-h2">Create New Post</h2>
           
           <label for="post-title" class="form-label">Post title</label>
-          <input type="text" class="form-control" id="post_title">
+          <input type="text" class="form-control" id="post_title" placeholder="Title your post">
 
-          <label for="new-post" class="form-label">Input body of post</label>
-          <textarea type="text" class="form-control" rows="5" id="post_body"></textarea>
+          <label for="new-post" class="form-label">Post body</label>
+          <textarea type="text" class="form-control" rows="5" id="post_body" placeholder="What would you like to say?"></textarea>
         </div>
         
-        <button type="submit" class="btn btn-dark" id="create-post">Submit Post</button>
+        <button type="submit" class="btn btn-dark" id="create-post">Submit</button>
       </form>
     </div>
   </div>

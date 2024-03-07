@@ -22,7 +22,6 @@ router.get('/login', (req, res) => {
 // GET all posts for homepage
 router.get('/home', async (req, res) => {
   try {
-    console.log("in homepage get route try block")
     const postData = await Post.findAll({
       include: [
         {
@@ -31,7 +30,6 @@ router.get('/home', async (req, res) => {
         },
       ],
     });
-    console.log("end of get all route try block")
     const posts = postData.map((post) => post.get({ plain: true }));
     console.log(posts)
     res.render('homepage', {
@@ -39,7 +37,6 @@ router.get('/home', async (req, res) => {
       posts,
       logged_in: req.session.logged_in
     });
-    console.log("just before catch block")
   } catch (err) {
     console.log(err)
     res.status(500).json(err);

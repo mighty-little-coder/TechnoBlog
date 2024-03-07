@@ -2,35 +2,35 @@
     {
       "id": "1",
       "post_title": "hello world",
-      "post-body": "A tutorial introduction to the programming language B.",
+      "post_body": "A tutorial introduction to the programming language B.",
       "date_created": "2019-01-01T00:00:00Z",
       "user_id": "1"
     },
     {
       "id": "2",
       "post_title": "well, would you look at that",
-      "post-body": "i mean, would you just look at that right there? juss lookatit.",
+      "post_body": "i mean, would you just look at that right there? juss lookatit.",
       "date_created": "2019-01-01T00:00:00Z",
       "user_id": "5"
     },
     {
       "id": "3",
       "post_title": "the quick brown fox",
-      "post-body": "jumps over the lazy dog.",
+      "post_body": "jumps over the lazy dog.",
       "date_created": "2019-01-01T00:00:00Z",
       "user_id": "2"
     },
     {
       "id": "4",
       "post_title": "i almost had you",
-      "post-body": "you almost had me? you never had me. you never had your car.",
+      "post_body": "you almost had me? you never had me. you never had your car.",
       "date_created": "2019-01-01T00:00:00Z",
       "user_id": "3"
     },
     {
       "id": "5",
       "post_title": "i am groot",
-      "post-body": "i am groot.",
+      "post_body": "i am groot.",
       "date_created": "2019-01-01T00:00:00Z",
       "user_id": "4"
     }
