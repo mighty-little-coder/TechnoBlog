@@ -10,17 +10,18 @@
 
 #body-bootstrap-override {
     background-image: url(../images/misty-mountain-wallpaper-2x.jpg);
-    background-size: cover;
 }
 
 #post-card {
-    background-color: gray;
+    background-color: rgb(188, 95, 4, 0.6);
     color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 #comment-card {
-    background-color: gray;
+    background-color: rgb(188, 95, 4, 0.4);
     color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 #add-comment-card {

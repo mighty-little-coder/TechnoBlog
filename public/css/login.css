@@ -10,5 +10,9 @@
 
 #body-bootstrap-override {
     background-image: url(../images/misty-mountain-wallpaper-2x.jpg);
-    
+}
+
+#login-h2, #signup-h2 {
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }

@@ -8,22 +8,22 @@
     },
     {
       "id": "2",
-      "post_title": "well, would you look at that",
-      "post_body": "i mean, would you just look at that right there? juss lookatit.",
+      "post_title": "Well, would you look at that",
+      "post_body": "I mean, would you just look at that right there? juss lookatit.",
       "date_created": "2019-01-01T00:00:00Z",
       "user_id": "5"
     },
     {
       "id": "3",
-      "post_title": "the quick brown fox",
-      "post_body": "jumps over the lazy dog.",
+      "post_title": "The quick brown fox",
+      "post_body": "Jumps over the lazy dog.",
       "date_created": "2019-01-01T00:00:00Z",
       "user_id": "2"
     },
     {
       "id": "4",
-      "post_title": "i almost had you",
-      "post_body": "you almost had me? you never had me. you never had your car.",
+      "post_title": "I almost had you",
+      "post_body": "You almost had me? You never had me. You never had your car!",
       "date_created": "2019-01-01T00:00:00Z",
       "user_id": "3"
     },
